@@ -1,0 +1,100 @@
+/* font-family: 'Inter', sans-serif; */
+:root {
+    --typeface: var('inter', sans-serif);
+    --secondary: var(#F8D716);
+    --primary: var(#1c1c1c);
+}
+
+* {
+    font-family: 'inter', sans-serif;
+}
+
+nav {
+    margin-top: 100px;
+}
+
+.profile {
+    background-image: url(../img/profil-beranda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 126px;
+    height: 126px;
+}
+
+.hr {
+    background-color: #F8D716;
+    width: 300px;
+    height: 0.2rem;
+    border-radius: 1px;
+}
+
+.nama {
+    color: #1c1c1c;
+}
+
+.profesi {
+    color: #F8D716;
+}
+
+.navbar-menu {
+    width: 100%;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: bold;
+    font-family: 'inter', sans-serif;
+}
+
+.navbar-menu a:hover {
+    background-color: #F8D716;
+    transition: ease-out 0.5s;
+}
+
+main .div {
+    background-color: rgba(248, 215, 22, 0.20);
+}
+
+main a {
+    margin: 0 300px;
+}
+
+.div p {
+    text-align: justify;
+    color: #1c1c1c;
+}
+
+main a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+main i {
+    background-color: transparent;
+}
+
+main i:hover {
+    background-color: #F8D716;
+    transition: ease-out 0.5s;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img {
+    background-image: url(../img/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}

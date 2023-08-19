@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+}
+
+:root {
+    --primary: #1c1c1c;
+    --secondary: #F8D716;
+}
+
+nav .container-nav {
+    /* background-color: salmon; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    margin: 100px auto 0;
+}
+
+.container-nav .profile {
+    width: 126px;
+    height: 126px;
+    background-image: url("../img/profil-beranda.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    box-shadow: 0px 4px 10px 0px var(--primary)
+}
+
+.container-nav .heading {
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.nav {
+    width: 100%;
+}
+
+.heading div:nth-child(1) {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.heading div:nth-child(2) {
+    color: var(--secondary);
+}
+
+.heading span {
+    margin: 0 auto;
+    height: 3px;
+    width: 50%;
+    background-color: var(--secondary);
+}
+
+.container-nav .navbar-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu a {
+    color: var(--primary);
+    font-weight: bold;
+    padding: 6px 0;
+    margin-top: 12px;
+}
+
+main .container-main {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.about-me {
+    background-color: rgba(248, 215, 22, 0.20);
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: var(--primary);
+}
+
+.about-me .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.about-me p {
+    text-align: justify;
+    line-height: 1.6rem;
+}
+
+footer .container-footer {
+    width: 80%;
+    border-top: 2px solid #ddd;
+    padding: 12px 0;
+    margin: 0 auto;
+}
+
+.container-footer .content {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.content .logo {
+    background-image: url("../img/logo-circle.png");
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.content p {
+    font-weight: bold;
+}
+
+
+/* mobile */
+@media (min-width: 576px) {
+    .container-nav .navbar-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navbar-menu a {
+        color: var(--primary);
+        font-weight: bold;
+        padding: 6px 0;
+    }
+
+    .container-nav .navbar-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    nav .container-nav {
+        /* background-color: salmon; */
+        width: 60%;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        column-gap: 20px;
+        margin: 100px auto 0;
+    }
+
+    .container-nav .profile {
+        background-image: url("../img/profil-beranda.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        box-shadow: 0px 4px 10px 0px var(--primary);
+    }
+
+    .container-nav .heading {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading span {
+        text-align: center;
+        margin: 0;
+        height: 3px;
+        width: 80%;
+        background-color: var(--secondary);
+    }
+
+    .container-nav .navbar-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main .container-main {
+        width: 60%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    footer .container-footer {
+        width: 60%;
+        border-top: 2px solid #ddd;
+        padding: 12px 0;
+        margin: 0 auto;
+    }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    nav .container-nav {
+        /* background-color: salmon; */
+        width: 50%;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        column-gap: 40px;
+        margin: 120px auto 0;
+    }
+
+    .container-nav .profile {
+        background-image: url("../img/profil-beranda.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        box-shadow: 0px 4px 10px 0px var(--primary);
+    }
+
+    .container-nav .heading {
+        font-weight: bold;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading span {
+        text-align: center;
+        margin: 0;
+        height: 3px;
+        width: 100%;
+        background-color: var(--secondary);
+    }
+
+    .container-nav .navbar-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu a {
+        color: var(--primary);
+        font-weight: bold;
+        padding: 8px 12px;
+    }
+
+    .navbar-menu a:hover {
+        color: var(--primary);
+        font-weight: bold;
+        padding: 8px 12px;
+        background-color: var(--secondary);
+        border-radius: 8px;
+        transition: ease-out 0.5s;
+    }
+
+    main .container-main {
+        width: 50%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .container-main a {
+        border-radius: 8px;
+    }
+
+    .container-main a:hover {
+        border-radius: 8px;
+        background-color: var(--secondary);
+        transition: ease-out 0.5s;
+    }
+
+    footer .container-footer {
+        width: 50%;
+        border-top: 2px solid #ddd;
+        padding: 12px 0;
+        margin: 100px auto 0;
+    }
+}
+
+/* full HD */
+@media (min-width: 1400px) {
+    body {
+        overflow: hidden;
+    }
+
+    nav .container-nav {
+        /* background-color: salmon; */
+        width: 50%;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        column-gap: 40px;
+        margin: 120px auto 0;
+    }
+
+    main .container-main {
+        width: 50%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    footer .container-footer {
+        width: 50%;
+        border-top: 2px solid #ddd;
+        padding: 12px 0;
+        margin: 100px auto 0;
+    }
+}
