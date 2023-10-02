@@ -89,6 +89,7 @@ main .container-main {
     align-items: center;
 }
 
+
 .container-main .content-2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -167,16 +168,19 @@ ul li {
 }
 
 .text .tools {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
 }
 
 .tools img {
+    display: block;
     width: 4rem;
-    padding: 8px;
-    background-color: var(--secondary);
     border-radius: 4px;
+    margin: 8px auto;
 }
 
 main>a {
@@ -409,13 +413,12 @@ footer .container-footer {
     }
 
     #big-icon:nth-child(2) {
-        margin: 735px 0 70px 0;
+        margin: 800px 0 70px 0;
     }
 
     #small-icon {
         display: none;
     }
-
 
     .container-main a {
         border-radius: 8px;

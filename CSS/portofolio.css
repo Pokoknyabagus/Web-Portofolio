@@ -27,7 +27,7 @@ nav .container-nav {
 .container-nav .profile {
     width: 126px;
     height: 126px;
-    background-image: url("../img/profil-beranda.jpg");
+    background-image: url("../img/Edit.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,14 +92,89 @@ main .container-main {
     gap: 20px;
 }
 
-.img {
-    background-position: center;
-    background-size: cover;
+.thumbnail .card {
     width: 100%;
-    height: 460px;
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.20);
 }
+
+.card .card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    padding: 40px;
+
+}
+
+.card-text h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #313131;
+}
+
+.flex .ASM p {
+    text-wrap: wrap;
+}
+
+.tailwind div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tailwind p {
+    margin-top: 5px;
+}
+
+.link {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.link a {
+    padding: 8px 16px;
+    background-color: #F8D716;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary);
+    border-radius: 8px;
+}
+
+.link a:hover {
+    background-color: #e6c611;
+    transition: all ease-in-out;
+
+}
+
+
 
 main>a {
     display: flex;
@@ -181,7 +256,7 @@ footer .container-footer {
     }
 
     .container-nav .profile {
-        background-image: url("../img/profil-beranda.jpg");
+        background-image: url("../img/Edit.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
