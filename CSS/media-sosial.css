@@ -27,7 +27,7 @@ nav .container-nav {
 .container-nav .profile {
     width: 126px;
     height: 126px;
-    background-image: url("../img/profil-beranda.jpg");
+    background-image: url("../img/v.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ footer .container-footer {
     }
 
     .container-nav .profile {
-        background-image: url("../img/profil-beranda.jpg");
+        background-image: url("../img/v.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -261,7 +261,7 @@ footer .container-footer {
     }
 
     .container-nav .profile {
-        background-image: url("../img/profil-beranda.jpg");
+        background-image: url("../img/v.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -367,7 +367,7 @@ footer .container-footer {
     }
 
     .container-nav .profile {
-        background-image: url("../img/profil-beranda.jpg");
+        background-image: url("../img/v.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
