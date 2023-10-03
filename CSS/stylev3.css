@@ -27,12 +27,13 @@ nav .container-nav {
 .container-nav .profile {
     width: 126px;
     height: 126px;
-    background-image: url("../img/profil-beranda.jpg");
+    background-image: url("../img/v.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 100%;
-    box-shadow: 0px 4px 10px 0px var(--primary)
+    border: 3px solid var(--secondary);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .container-nav .heading {
@@ -187,12 +188,14 @@ footer .container-footer {
     }
 
     .container-nav .profile {
-        background-image: url("../img/profil-beranda.jpg");
+        background-image: url("../img/v.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 100%;
-        box-shadow: 0px 4px 10px 0px var(--primary);
+        border: 3px solid var(--secondary);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        ;
     }
 
     .container-nav .heading {
@@ -252,12 +255,14 @@ footer .container-footer {
     }
 
     .container-nav .profile {
-        background-image: url("../img/profil-beranda.jpg");
+        background-image: url("../img/v.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 100%;
-        box-shadow: 0px 4px 10px 0px var(--primary);
+        border: 3px solid var(--secondary);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        ;
     }
 
     .container-nav .heading {
@@ -344,12 +349,14 @@ footer .container-footer {
     }
 
     .container-nav .profile {
-        background-image: url("../img/profil-beranda.jpg");
+        background-image: url("../img/v.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 100%;
-        box-shadow: 0px 4px 10px 0px var(--primary);
+        border: 3px solid var(--secondary);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        ;
     }
 
     .container-nav .heading {
