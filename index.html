@@ -1,73 +1,727 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="CSS/stylev3.css" />
-    <link rel="shortcut icon" href="img/logo-circle.png" type="image/x-icon" />
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- phosphor icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/logo-circle.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="dist/output.css">
     <title>PokoknyaBagus.</title>
-  </head>
+</head>
 
-  <body>
-    <!-- Nav start -->
-    <nav>
-      <div class="container-nav">
-        <!-- profile start -->
-        <div class="profile"></div>
-        <!-- profile end -->
-
-        <div class="nav">
-          <!-- heading start -->
-          <div class="heading">
-            <div>Bagus sugiono</div>
-            <div>UI & UX Designer</div>
-            <span></span>
-          </div>
-          <!-- heading end -->
-
-          <!-- Navbar start -->
-          <div class="navbar-menu">
-            <a href="index.html" class="visited">Beranda</a>
-            <a href="riwayat-hidup.html">Riwayat hidup</a>
-            <a href="portofolio.html">Portofolio</a>
-            <a href="media-sosial.html">Hubungi saya</a>
-          </div>
-          <!-- Navbar end -->
+<body>
+    <!-- header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10" data-aos="fade-down"
+        data-aos-duration="1500">
+        <div class="container py-4 sm:px-10 lg:px-30 xl:px-40">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4 lg:pe-6 lg:ps-10">
+                    <a href="#home" class="w-full flex items-center gap-x-2">
+                        <img class="w-10" src="img/logo-circle.png" alt="logo">
+                        <span class="font-bold text-base text-gray-700">PokoknyaBagus.</span>
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button type="button" id="hamburger" name="hamburger" class="block absolute right-4 px-2 lg:hidden">
+                        <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute bg-white py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Tentang
+                                    saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio"
+                                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-black py-2 mx-8 flex group-hover:text-primary">Hubungi
+                                    Saya</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-    <!-- Nav end -->
+    </header>
+    <!-- header end -->
 
-    <!-- Main start -->
-    <main>
-      <div class="container-main">
-        <div class="about-me">
-          <div class="title">👋 Halo, Saya Bagus</div>
-          <p>
-            Saya seorang Fresh graduate dari univeristas Mercubuana dan berumur 23 tahun. Setelah lulus, saya ingin menjadi seorang UI & UX Designer. Saya tertarik dengan bekerja diperusahaan web development dan dapat mengejar karir di
-            perusahaan yang berada di bidang yang sama dengan keahlian saya suatu saat nanti.
-          </p>
-        </div>
-      </div>
-      <a href="riwayat-hidup.html">
-        <i class="bx bx-right-arrow-alt mx-auto rounded-3 mt-5 text-center" style="font-size: 3rem; color: #1c1c1c"></i>
-      </a>
-    </main>
-    <!-- Main end -->
 
-    <!-- Footer start -->
-    <footer>
-      <div class="container-footer">
-        <div class="content">
-          <p>©</p>
-          <div class="logo"></div>
-          <p>PokoknyaBagus.</p>
+    <!-- hero section start -->
+    <section id="home" class="pt-36" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container px-4 sm:px-10 lg:px-30 xl:px-40">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="w-full h-full sm:py-6 lg:pe-6 lg:ps-10 lg:place-self-center">
+                    <div class="font-bold text-primary mb-8">
+                        <h3 class="text-black text-sm lg:text-base mb-2">Halo 👋, Saya</h3>
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl">Bagus Sugiono</h1>
+                        <p class="text-secondary font-bold mt-2 lg:text-2xl">Designer</p>
+                        <p class="font-normal text-black mt-2">Selamat datang di website portofolioku.</p>
+                    </div>
+                    <div>
+                        <a href="https://drive.google.com/file/d/1MhLr7mUy-qH3ltVLveYlncBTfFdudWYu/view?usp=sharing"
+                            class="text-white font-bold bg-primary py-2 px-4 rounded-lg hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out"><i
+                                class="ph ph-file"></i> Unduh CV</a>
+                    </div>
+                </div>
+                <div class="w-full mt-6 p-6 hidden sm:block sm:mt-0 lg:w-1/2 lg:place-self-center lg:p-0">
+                    <div class="rounded-full overflow-hidden mt-auto shadow-lg ring ring-gray-100">
+                        <img class="rounded-full scale-90" src="img/foto-profil trans 1x1.png" alt="hero">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- hero section end -->
+
+
+    <!-- about section start -->
+    <section id="about" class="pt-36 md:py-16">
+        <div class="container  px-4 sm:px-10 md:py-20 lg:px-30 xl:px-40">
+            <div class="grid grid-rows-2 gap-6 lg:grid-rows-none lg:grid-cols-2">
+                <div class="w-full sm:py-6 lg:pe-6 lg:ps-10 lg:place-self-center" data-aos="fade-right"
+                    data-aos-duration="1500">
+                    <h1 class="text-3xl text-primary font-bold mb-4">Tentang Saya</h1>
+                    <p>Saya Fresh graduate dari univeristas Mercubuana.Keahlian saya berupa dibidang UI & UX Designer
+                        dan Graphic Designer.</p>
+                    <p class="my-4">Saya bisa mengoperasikan software adobe desain ditambah HTML, CSS dan framework
+                        (bootstrap5 atau TailwindCSS untuk pembuatan website. saya memahami user ﬂow, design system,
+                        wireframe, low-high ﬁdelity dan juga elemen desain (color, layouting, typography).</p>
+                    <p>Saya tertarik dengan bekerja diperusahaan Web development dan Desain kreatif dapat mengejar karir
+                        di perusahaan tersebut dan juga memajukan perusahaan.</p>
+                </div>
+                <div class="w-full sm:py-6 lg:pe-6 lg:ps-10" data-aos="fade-left" data-aos-duration="1500"
+                    data-aos-delay="1000">
+                    <h1 class="text-3xl text-primary font-bold mb-4">Media Sosial</h1>
+                    <p>bisa juga berteman dan ikuti saya untuk melihat protofolio saya selanjutnya.</p>
+                    <div class="flex gap-4 py-6">
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-red-400 text-red-400 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.instagram.com/bagus.s45_/ " class="block">
+                                <i class="ph ph-instagram-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-red-400 text-red-400 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.instagram.com/pokoknyabagus.90/ " class="block">
+                                <i class="ph ph-instagram-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-blue-400 text-blue-400 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.behance.net/bagussugiono1 " class="block">
+                                <i class="ph ph-behance-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-cyan-400 text-cyan-400 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.linkedin.com/in/bagus-sugiono-a66ba318a " class="block">
+                                <i class="ph ph-linkedin-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-gray-700 text-gray-700 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://github.com/Pokoknyabagus?tab=repositories" class="block">
+                                <i class="ph ph-github-logo"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+
+    <!-- portofolio section start -->
+    <section id="portofolio" class="py-36 bg-slate-300">
+        <div class="container px-4 sm:px-10 lg:px-30 xl:px-40">
+            <div class="w-full text-center mb-12 sm:w-1/2 lg:w-2/6 sm:mx-auto">
+                <h1 class="text-3xl font-bold text-black mb-3">Portofolio</h1>
+                <p class="text-gray-700 font-bold">Di bawah ini portofolio saya berupa UI/UX Design dan Graphic Design
+                </p>
+                <span class="block w-3/4 mx-auto h-1 bg-white rounded-full my-4"></span>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/redvelvet/1 (1).jpg" alt="1">
+                            <img src="img/Portofolio/redvelvet/1 (2).jpg" alt="2">
+                            <img src="img/Portofolio/redvelvet/1 (3).jpg" alt="3">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Redvelvet Cafe</h1>
+                            <p>Pembuatan website cafe responsive yang menyajikan produknya dari dasar rasa redvelvet.</p>
+                            <a href="https://web-redvelvet-cafe.netlify.app/" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View Website</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Agustus 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/Belanjaku/1 (1).png" alt="1">
+                            <img src="img/Portofolio/Belanjaku/1 (1).jpg" alt="1">
+                            <img src="img/Portofolio/Belanjaku/1 (2).jpg" alt="2">
+                            <img src="img/Portofolio/Belanjaku/1 (3).jpg" alt="3">
+                            <img src="img/Portofolio/Belanjaku/1 (4).jpg" alt="4">
+                            <img src="img/Portofolio/Belanjaku/1 (5).jpg" alt="5">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Belanjaku</h1>
+                            <p>Pembuatan website e-commerce secara responsive bisa juga digunakan melewati versi mobile</p>
+                            <a href="https://belanjaku.netlify.app/" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View Website</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Agustus 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/farmasi/1 (1).png" alt="1">
+                            <img src="img/Portofolio/farmasi/1 (1).jpg" alt="1">
+                            <img src="img/Portofolio/farmasi/1 (2).jpg" alt="2">
+                            <img src="img/Portofolio/farmasi/1 (3).jpg" alt="3">
+                            <img src="img/Portofolio/farmasi/1 (4).jpg" alt="4">
+                            <img src="img/Portofolio/farmasi/1 (5).jpg" alt="5">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Company Profile</h1>
+                            <p>Pembuatan website yang berdasarkan perusahaan di bidang farmasi atau juga obat-obatan.</p>
+                            <a href="https://web-farmasi-company-profile.netlify.app/" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View Website</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Agustus 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                                <img src="img/Graphic Design/TA/ta (1).jpg" alt="1">
+                                <img src="img/Graphic Design/TA/ta (2).jpg" alt="2">
+                                <img src="img/Graphic Design/TA/ta (3).jpg" alt="3">
+                                <img src="img/Graphic Design/TA/ta (4).jpg" alt="4">
+                            </div>
+                            <div class="grid grid-cols-2 lg:grid-cols-4">
+                                <img class="place-self-center" src="img/Graphic Design/TA/mockup (1).jpg" alt="1">
+                                <img class="place-self-center" src="img/Graphic Design/TA/mockup (1).png" alt="2">
+                                <img class="place-self-center" src="img/Graphic Design/TA/mockup (2).png" alt="3">
+                                <img class="place-self-center" src="img/Graphic Design/TA/mockup (3).png" alt="4">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Campaign social (Poster) - "Pentinganya Cuci Tangan Pakai Sabun untuk SDN 10 Penjaringan Pagi"</h1>
+                            <p>Campaign social ini dibuat untuk mengingatkan kembali kepada anak SD setelah pandemi covid-19 berakhir, untuk tidak lupa cuci tangan pakai sabun sebelum atau sesudah melakukan kegiatan diluar ruangan.</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juni 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3 lg:grid-cols-5">
+                            <img src="img/Graphic Design/pizza hot/brosur (1).jpg" alt="1">
+                            <img src="img/Graphic Design/pizza hot/brosur (2).jpg" alt="2">
+                            <img src="img/Graphic Design/pizza hot/menu (1).jpg" alt="5">
+                            <img src="img/Graphic Design/pizza hot/menu (2).jpg" alt="6">
+                            <img src="img/Graphic Design/pizza hot/Pizza Hot - Brosur lipat 3 Mockup.jpg" alt="7">
+                            <img src="img/Graphic Design/pizza hot/Pizza Hot - Mockup Voucher.jpg" alt="8">
+                            <div class="flex flex-col gap-2">
+                                <img src="img/Graphic Design/pizza hot/voucher (1).jpg" alt="9">
+                                <img src="img/Graphic Design/pizza hot/voucher (2).jpg" alt="10">
+                            </div>
+                            <img src="img/Graphic Design/pizza hot/brosur (3).jpg" alt="3">
+                            <img src="img/Graphic Design/pizza hot/brosur (4).jpg" alt="4">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Pizza Hot</h1>
+                            <p>Desain untuk sebuah restoran pizza, desain tersebut terdiri dari menu makanan, brosur dan voucher</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat September 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/orange/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/orange/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/orange/1 (2).jpg" alt="2">
+                            <img class="shadow" src="img/Portofolio/orange/1 (3).jpg" alt="3">
+                            <img class="shadow" src="img/Portofolio/orange/1 (4).jpg" alt="4">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Company Profile</h1>
+                            <p>Pembuatan website yang berdasarkan perusahaan di bidang penjualan buah jeruk.</p>
+                            <a href="https://orange-company-profile.netlify.app/" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View Website</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juli 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/green/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/green/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/green/1 (2).jpg" alt="2">
+                            <img class="shadow" src="img/Portofolio/green/1 (3).jpg" alt="3">
+                            <img class="shadow" src="img/Portofolio/green/1 (4).jpg" alt="4">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Company Profile</h1>
+                            <p>Pembuatan website yang berdasarkan perusahaan di bidang penjualan Sayuran dan buah-buahan.</p>
+                            <a href="https://green-fruit-cp.netlify.app/" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View Website</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juli 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-2 sm:grid-cols-3">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (1).jpg" alt="1">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (2).jpg" alt="2">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (3).jpg" alt="3">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (4).jpg" alt="4">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (5).jpg" alt="5">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (6).jpg" alt="6">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (7).jpg" alt="7">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (8).jpg" alt="8">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine  (9).jpg" alt="9">
+                        </div>
+                        <div class="w-full grid gap-1 grid-cols-1 mt-2 lg:mt-0">
+                            <img src="img/Graphic Design/vaccine/Feed - Campign Vaccine Banner.jpg" alt="banner">
+                            <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-full">
+                                <h1 class="font-bold">Feed & Banner Instagram - Covid19</h1>
+                                <p>Desain ini dibuat untuk social campaign pada saat pandemi covid 19</p>
+                                <p class="text-sm text-gray-400 mt-3">Dibuat Agustus 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-2">
+                            <img class="shadow place-self-center" src="img/Portofolio/ticket/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/ticket/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/ticket/1 (2).jpg" alt="2">
+                            <img class="shadow" src="img/Portofolio/ticket/1 (3).jpg" alt="3">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Company Profile</h1>
+                            <p>Pembuatan website aplikasi yang melayani booking wisata atau destinasi dan transportasi.</p>
+                            <a href="https://github.com/Pokoknyabagus/Web-Ticket" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View Website</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juni 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 md:grid-cols-3">
+                            <img src="img/Graphic Design/banner music/banner (1).jpg" alt="1">
+                            <img src="img/Graphic Design/banner music/banner (2).jpg" alt="2">
+                            <img class="w-full lg:w-[100px]" src="img/Graphic Design/banner music/banner (4).jpg" alt="4">
+                        </div>
+                        <div class="w-full grid gap-2 grid-cols-1">
+                            <img src="img/Graphic Design/banner music/banner (3).jpg" alt="3">
+                            <div class="flex flex-col gap-2 mt-2 lg:mt-0">
+                                <h1 class="font-bold">Sebuah Banner dan Poster event musik</h1>
+                                <p>Untuk ukuran berbeda dan juga media yang digunakan untuk banner dan poster tersbut</p>
+                                <p class="text-sm text-gray-400 mt-3">Dibuat Juli 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 lg:grid-cols-3 ">
+                            <img src="img/Graphic Design/maulid/Maulid - Banner 4x3(1).jpg" alt="1">
+                            <img src="img/Graphic Design/maulid/Maulid - Banner 3x3(2).jpg" alt="2">
+                            <img src="img/Graphic Design/maulid/Maulid - Name Tag.jpg" alt="2">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Banner dan Name Tag - Maulid Nabi Muhammad SAW 1443 H</h1>
+                            <p>Desain tersebut dibuat dalam rangka acara maulid Nabi Muhammad SAW di RT.04/08</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Desember 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/NFT/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/NFT/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/NFT/1 (2).jpg" alt="2">
+                            <img class="shadow" src="img/Portofolio/NFT/1 (3).jpg" alt="3">
+                            <img class="shadow" src="img/Portofolio/NFT/1 (4).jpg" alt="4">
+                            <img class="shadow" src="img/Portofolio/NFT/1 (5).jpg" alt="5">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website NFT Marketplace</h1>
+                            <p>Pembuatan website NFT marketplace untuk transasi nft dari seluruh dunia.</p>
+                            <a href="https://www.figma.com/proto/wPl3hRT980s40LRZwOorZw/UI-NFT-Web?type=design&node-id=308-150&t=Qqw9KYBGhtNmrYf4-1&scaling=scale-down-width&page-id=308%3A149&starting-point-node-id=308%3A150&mode=design" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">Demo Prototype</a>
+                            <a href="https://www.figma.com/file/wPl3hRT980s40LRZwOorZw/UI-NFT-Web?type=design&node-id=308%3A149&mode=design&t=uBx2IE9hHnbcjxuc-1" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View File</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juni 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 ">
+                            <img src="img/Graphic Design/Wagon/post (1).jpg" alt="1">
+                            <img src="img/Graphic Design/Wagon/post (2).jpg" alt="2">
+                            <img src="img/Graphic Design/Wagon/post (3).jpg" alt="3">
+                            <img src="img/Graphic Design/Wagon/post (4).jpg" alt="4">
+                            <img src="img/Graphic Design/Wagon/post (5).jpg" alt="5">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Feed & Story Instagram - Wagon.id</h1>
+                            <p>Sebuah konten feed dan story Instagram untuk wagon.id pada baru dibuat.</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat di BUMI Entertainment Oktober 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/wagon/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/wagon/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/wagon/1 (2).jpg" alt="2">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Wagon.id</h1>
+                            <p>Desain Website wagon.id yang bertujuan untuk menghubungkan penjual ke supplier melewati pihak wagon.id yang menjadi distributornya.</p>
+                            <a href="https://www.figma.com/file/OcApbEXOymXEGGlm5BdOvn/Wagon?type=design&node-id=0%3A1&mode=design&t=fOupj1eYZvyFmOJe-1" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View File</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juni 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/movie - 1/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/movie - 1/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/movie - 1/1 (2).jpg" alt="2">
+                            <img class="shadow" src="img/Portofolio/movie - 1/1 (3).jpg" alt="3">
+                            <img class="shadow" src="img/Portofolio/movie - 1/1 (4).jpg" alt="4">
+                            <img class="shadow" src="img/Portofolio/movie - 1/1 (5).jpg" alt="5">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Movie</h1>
+                            <p>Pembuatan website Movie secara berbayar dan belangganan seperti netflix dan disney hotstar</p>
+                            <a href="https://www.figma.com/proto/l4rnz8cnkP4PA1YcT1MM4a/UI-Movie?type=design&node-id=49-63&t=296qyDSJi1zfpblZ-1&scaling=scale-down-width&page-id=49%3A62&starting-point-node-id=49%3A63&mode=design" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">Demo Prototype</a>
+                            <a href="https://www.figma.com/file/l4rnz8cnkP4PA1YcT1MM4a/UI-Movie?type=design&node-id=49%3A62&mode=design&t=09WfTR2n9dyVDBFK-1" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View File</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juni 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1">
+                            <img class="shadow-lg place-self-center" src="img/Graphic Design/Banner YT Rumah Beta.jpg" alt="1">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Banner Youtube untuk Rumah Beta </h1>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat di BUMI Entertainment Oktober 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1">
+                            <img class="shadow-lg" src="img/Graphic Design/gelang/gelang (1).jpg" alt="1">
+                            <img class="shadow-lg" src="img/Graphic Design/gelang/gelang (2).jpg" alt="2">
+                            <img class="shadow-lg" src="img/Graphic Design/gelang/gelang (3).jpg" alt="3">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Gelang Ticket - Event Tanda Mata untuk GIGI 2022</h1>
+                            <p>Gelang tanda masuk event Tanda Mata untuk GIGI. Warna biru untuk dari Kemendikbud, warna merah untuk special invitation dan warna hitam untuk umum.</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat di BUMI Entertainment Oktober 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-2 sm:grid-cols-3 md:grid-cols-6">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (5).jpg" alt="5">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (6).jpg" alt="6">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (1).jpg" alt="1">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (2).jpg" alt="2">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (3).jpg" alt="3">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (8).jpg" alt="8">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (9).jpg" alt="9">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (11).jpg" alt="11">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (12).jpg" alt="12">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (13).jpg" alt="13">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (16).jpg" alt="16">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (17).jpg" alt="17">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (19).jpg" alt="19">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (20).jpg" alt="20">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (21).jpg" alt="21">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (23).jpg" alt="23">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (24).jpg" alt="24">
+                            <img src="img/Graphic Design/T-shirt/Mockup T-Shirt (25).jpg" alt="25">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Mockup - T-Shirt</h1>
+                            <p>Untuk mockup T-shirt ini di desain untuk merchandise berisi foto atau desain artis/musisi
+                                yang akan ditaruh pada website musikbagus.id.</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat di BUMI Entertainment November 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-2 sm:grid-cols-3">
+                            <img src="img/Graphic Design/cover CD/Mockup Disk (1).jpg" alt="1">
+                            <img src="img/Graphic Design/cover CD/Mockup Disk (2).jpg" alt="2">
+                            <img src="img/Graphic Design/cover CD/Mockup Disk (3).jpg" alt="3">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Mockup - Cover CD</h1>
+                            <p>Mockup CD ini akan ditaruh di website musikbagus.id sebagai merchandise.</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat di BUMI Entertainment November 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+                            <img src="img/Graphic Design/feed/a (6).jpg" alt="6">
+                            <img src="img/Graphic Design/feed/a (7).jpg" alt="7">
+                            <img src="img/Graphic Design/feed/a (8).jpg" alt="8">
+                            <img src="img/Graphic Design/feed/a (9).jpg" alt="9">
+                            <img src="img/Graphic Design/feed/a (11).jpg" alt="11">
+                            <img src="img/Graphic Design/feed/a (12).jpg" alt="12">
+                            <img src="img/Graphic Design/feed/a (13).jpg" alt="13">
+                            <img src="img/Graphic Design/feed/a (14).jpg" alt="14">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Feed Instagram - musikbagus.id</h1>
+                            <p>Desain informasi terbaru yang dipost melewati media sosail instagram musikbagus.id </p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat di BUMI Entertainment September 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">Graphic Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (1).jpg" alt="1">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (2).jpg" alt="2">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (3).jpg" alt="3">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (4).jpg" alt="4">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (5).jpg" alt="5">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (6).jpg" alt="6">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (7).jpg" alt="7">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (8).jpg" alt="8">
+                            <img src="img/Graphic Design/foto artis/Editing Foto ArtisPenyanyi (9).jpg" alt="9">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Asset - Editing Foto musisi</h1>
+                            <p>Desain ini untuk dibuat sebagai latar belakang banner acara musik untuk website musikbagus.id maupun BUMI Entertainment.</p>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat di BUMI Entertainment Oktober 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-left" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/news/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/news/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/news/1 (2).jpg" alt="2">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Berita atau news</h1>
+                            <p>Pembuatan desain website dengan bertema berita apa saja dan yang terbaru atau yang sedang trending. terinspirasi seperti detik.com dan liputan 6.</p>
+                            <a href="https://www.figma.com/file/3dxHkphxLt9gTBnazghiW2/News-website?type=design&node-id=0%3A1&mode=design&t=uUWHQzvZRdZuDj3W-1" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View File</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juni 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid bg-white shadow-lg p-4 rounded-lg grid-rows-1 mb-8" data-aos="fade-right" data-aos-duration="1000">
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-bold text-2xl text-center text-gray-700 lg:text-left">UI/UX Design</h1>
+                    <div class="block lg:flex lg:flex-row lg:gap-6">
+                        <div class="w-full grid gap-1 grid-cols-1 sm:grid-cols-3">
+                            <img class="shadow place-self-center" src="img/Portofolio/restaurant/1 (1).png" alt="1">
+                            <img class="shadow" src="img/Portofolio/restaurant/1 (1).jpg" alt="1">
+                            <img class="shadow" src="img/Portofolio/restaurant/1 (2).jpg" alt="2">
+                        </div>
+                        <div class="flex flex-col gap-2 mt-2 lg:mt-0 lg:w-72">
+                            <h1 class="font-bold">Website Restaurant</h1>
+                            <p>Pembuatan desain website company profile yang berada dibidang retaurant atau penjualan makan burger.</p>
+                            <a href="https://www.figma.com/file/Th6e8eCQ3myjkFMIds4H7h/Website-Restaurant?type=design&node-id=0%3A1&mode=design&t=ykiGLVIvwXp4hlXS-1" class="py-3 px-4 rounded-lg bg-primary text-center text-white font-bold hover:bg-yellow-500 hover:shadow-lg transition duration-300 ease-in-out">View File</a>
+                            <p class="text-sm text-gray-400 mt-3">Dibuat Juni 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portofolio section end -->
+
+    <!-- footer section start -->
+    <footer id="contact" class="pt-36 py-4 bg-slate-800">
+        <div class="container px-4 sm:px-10 lg:px-30 xl:px-40" data-aos="fade-up" data-aos-duration="1500">
+            <div class="grid grid-rows-3 gap-12 border-b-2 pb-20 border-gray-700 lg:grid-rows-none lg:grid-cols-3">
+                <div class="flex flex-col gap-6">
+                    <a href="#home" class="flex items-center">
+                        <img src="img/logo-circle.png" alt="logo" class="w-12">
+                        <span class="text-white font-bold ms-3 text-xl">PokoknyaBagus.</span>
+                    </a>
+                    <div class="text-gray-200 flex flex-col gap-3">
+                        <p>Jl. Pluit Dalam No.71 RT.04/08 Kel.Penjaringan Jakarta Utara 14440</p>
+                        <p><i class="ph ph-envelope-simple"></i> bagussugiono45@gmail.com</p>
+                        <p><i class="ph ph-whatsapp-logo"></i> 081293160830</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 lg:ps-10">
+                    <h1 class="mb-3 text-2xl font-bold text-white">Tautan</h1>
+                    <a href="#home"
+                        class="text-gray-300 block hover:text-primary transition duration-300 ease-in-out">Beranda</a>
+                    <a href="#about"
+                        class="text-gray-300 block hover:text-primary transition duration-300 ease-in-out">Tentang
+                        Saya</a>
+                    <a href="#portofolio"
+                        class="text-gray-300 block hover:text-primary transition duration-300 ease-in-out">Portofolio</a>
+                    <a href="#contact"
+                        class="text-gray-300 block hover:text-primary transition duration-300 ease-in-out">Hubungi
+                        Saya</a>
+                </div>
+                <div>
+                    <h1 class="mb-1 text-2xl font-bold text-white">Hubungi Saya</h1>
+                    <div class="flex gap-4 py-6">
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-gray-300 text-gray-300 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.instagram.com/bagus.s45_/ " class="block">
+                                <i class="ph ph-instagram-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-gray-300 text-gray-300 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.instagram.com/pokoknyabagus.90/ " class="block">
+                                <i class="ph ph-instagram-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-gray-300 text-gray-300 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.behance.net/bagussugiono1 " class="block">
+                                <i class="ph ph-behance-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-gray-300 text-gray-300 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://www.linkedin.com/in/bagus-sugiono-a66ba318a " class="block">
+                                <i class="ph ph-linkedin-logo"></i>
+                            </a>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-gray-300 text-gray-300 text-2xl flex justify-center items-center hover:bg-primary hover:border-none hover:text-white transition duration-300 ease-in-out">
+                            <a href="https://github.com/Pokoknyabagus?tab=repositories" class="block">
+                                <i class="ph ph-github-logo"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-4">
+                <h6 class="text-white opacity-50 text-sm">Dibuat oleh Bagus Sugiono tahun 2023 menggunakan TailwindCSS.
+                </h6>
+            </div>
+        </div>
     </footer>
-    <!-- Footer end -->
-  </body>
+    <!-- footer section end -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="dist/js/script.js"></script>
+</body>
+
 </html>
